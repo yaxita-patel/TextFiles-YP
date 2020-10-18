@@ -8,7 +8,8 @@
     {        
     <li><a asp-controller="File"
     asp-action="Content"
-    asp-route-id="@str"   
+    asp-route-id="@str" 
+    onclick="FileClick"  
      >@str</a></li>
     }   
 </ul>
@@ -18,7 +19,8 @@
     <title>Reading Data from a File</title>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>   
 </head>
-<body>    
+<body>  
+    <script src="~/js/File.js"></script>  
 </body>
 </html>
 

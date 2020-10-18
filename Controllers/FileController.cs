@@ -24,13 +24,13 @@ namespace LabYaxita.Controllers
             return View(files);
         }
         public IActionResult Content()
-        {
+        {  
             string contentRootPath = _env.ContentRootPath;
             string webRootPath = _env.WebRootPath;
             //string filePath = Path.Combine(_env.WebRootPath, "TextFiles");
             string url = Request.Path.ToUriComponent();           
             string subFilename = url.Substring(26);
-          
+                
             string contentData = System.IO.File.ReadAllText( "TextFiles/" + subFilename);
 
             return Content(contentData );
