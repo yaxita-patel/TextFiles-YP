@@ -2,28 +2,23 @@
 @{
     ViewData["Title"] = "File";
 }
-
 <h1>@ViewData["Title"]</h1>
-
 <ul>   
     @foreach (var str in Model)
     {        
     <li><a asp-controller="File"
     asp-action="Content"
-    asp-route-id="@str" onclick="FileClick">@str</a></li>
-    }
+    asp-route-id="@str"   
+     >@str</a></li>
+    }   
 </ul>
-
 <!DOCTYPE html>
-
 <html>
 <head>
     <title>Reading Data from a File</title>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>   
 </head>
-<body>
-   
-     <script src="~/js/File.js"></script>     
+<body>    
 </body>
 </html>
 

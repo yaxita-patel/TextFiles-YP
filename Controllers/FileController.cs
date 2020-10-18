@@ -23,7 +23,6 @@ namespace LabYaxita.Controllers
             string[] files = Directory.GetFiles("TextFiles");
             return View(files);
         }
-
         public IActionResult Content()
         {
             string contentRootPath = _env.ContentRootPath;
